@@ -1,0 +1,72 @@
+<view class='rotateCtn'>
+  <!--正面的框  -->
+  <view class='{{frameClass1}}' data-id='1'>
+    <view class="homePageview">
+      <view class="viewTop">
+        <view class="goziwaixianview" bindtap='rotateFn'>
+          <view class="bigwendu">
+            <view class="wendu">{{temperature}}</view>
+            <view class="danwei">℃</view>
+            <view class="sanmianwendu">伞面温度</view>
+          </view>
+          <view class="ziwaixian">
+            <view class="uvcanshu">
+              <image class="uvimg" src="../../images/UV2.png"></image>
+              <text class="ziwaixiantxt">紫外线</text>
+              <text class="howdengji">{{ howziwaixian }}级</text>
+              <text class="dengji">{{ ziwaixian }}</text>
+            </view>
+          </view>
+        </view>
+        <image class="sanimg" src='../../images/homeSan.png' bindtap='goweather'></image>
+      </view>
+      <view class='viewBottom' bindtap='rotateFn'>
+        <view class="bodywendu">体感温度</view>
+        <view class="innerdu">{{innertemperature}}</view>
+        <view class="innerdanwei">℃</view>
+        <view class="innerimg">
+          <image class="uvimg" src="../../images/UV1.png"></image>
+          <text class="innerziwaixian">紫外线</text>
+        </view>
+        <view class="innerrouji">{{ziwaixian}}</view>
+        <view class="innerhwo">{{ howziwaixian }}级</view>
+      </view>
+    </view>
+  </view>
+  <!--背面的框  -->
+  <view class='{{frameClass2}}'>
+    <view class="homePageview1">
+      <view class="viewTop1">
+        <view class="goweatherviewbtn" bindtap='rotateFn'>
+          <view class="bigwendu1">
+            <view class="wendu1">{{ howziwaixian }}</view>
+            <view class="danwei1">级</view>
+          </view>
+          <view class="ziwaixian1">
+            <view class="uvcanshu1">
+              <image class="uvimg1" src="../../images/UV2.png"></image>
+              <text class="ziwaixiantxt1">紫外线</text>
+              <text class="dengji1">{{ziwaixian}}</text>
+            </view>
+          </view>
+          <view class='santem1'>
+            <text class="sanmianwendu1">伞面温度</text>
+            <text class="howdengji1">{{temperature}}℃</text>
+          </view>
+        </view>
+        <image class="sanimg1" src='../../images/homeSan.png' bindtap='goweather'></image>
+      </view>
+      <view class='viewBottom1' bindtap='rotateFn'>
+        <view class="bodywendu1">体感温度</view>
+        <view class="innerdu1">{{innertemperature}}℃</view>
+        <view class="innerimg1">
+          <image class="uvimg1" src="../../images/UV1.png"></image>
+          <text class="innerziwaixian1">紫外线</text>
+        </view>
+        <view class="innerrouji1">{{ziwaixian}}</view>
+        <view class="innerhwo1">{{ howziwaixian }}</view>
+        <view class="innerdanwei1">级</view>
+      </view>
+    </view>
+  </view>
+</view>

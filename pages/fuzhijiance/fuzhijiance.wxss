@@ -1,0 +1,123 @@
+.noimgview{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction:column;
+  background: #404040;
+  padding-bottom: 400rpx; 
+  box-sizing: border-box;
+}
+.noimg{
+  width: 280rpx;
+  height: 163rpx;
+  /* margin-bottom: 250rpx; */
+}
+.qingdianji{
+  color: #ffffff;
+}
+
+.xixiajiantou{
+  width: 10rpx;
+  height: 27rpx;
+  margin: 10rpx 0;
+}
+.ceyice{
+  color: #beda42;
+}
+.haveimgview{
+  width: 100%;
+  height: 100%;
+}
+.viewTop{
+  width: 100%;
+  height: 380rpx;
+  display: flex;
+  flex-direction: column; 
+  justify-content: center;
+  align-items: center;
+}
+.renwutouxiang{
+  width: 220rpx;
+  height: 220rpx;
+  border-radius: 15rpx;
+}
+.imgtime{
+  font-size: 40rpx;
+  color: #aaaaaa;
+  line-height: 60rpx;
+}
+.viewBottom{
+  width: 100%;
+  height: 100%
+}
+.bottomTitle{
+  width: 100%;
+  height: 62rpx;
+  background: #beda42;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.baogaoicon{
+  width: 32rpx;
+  height: 39rpx;
+  margin-left:40rpx;
+}
+.baogaotxt{
+  color: #ffffff;
+  /* font-weight: 900; */
+  margin-left: 16rpx;
+}
+.fuzhicontentview{
+  width: 100%;
+  height: 100%;
+  padding: 0 40rpx;
+  box-sizing: border-box;
+}
+.fuse,.fuzhi,.heitoushuliang,.maokongzhaungkuang,.doudoushuliang,.naishouxing{
+  width: 100%;
+  min-height: 300rpx;
+  padding: 80rpx 0;
+  border-bottom: 1rpx solid #cccccc;
+}
+.naishouxing{
+  border: none;
+}
+.fusebigtitle,.fuzhibigtitle,.heitoubigtitle,.maokongbigtitle,.doudoubigtitle,.naishoubigtitle{
+  font-size: 42rpx;
+  color: #000000;
+  font-weight: 900;
+  margin-bottom: 30rpx;
+}
+.fusedengji,.fuzhidengji,.heitoudengji,.maokongdengji,.doudoudengji,.naishoudengji{
+  padding-left: 60rpx;
+  box-sizing: border-box;
+  color: #beda42;
+  font-size: 40rpx;
+  margin-bottom: 20rpx;
+}
+.fusecontent,.fuzhicontent,.heitoucontent,.maokongconthent,.doudoucontent,.naishoucontent{
+  padding: 0 60rpx;
+  box-sizing: border-box;
+  color: #bbbbbb;
+  line-height: 56rpx;
+}
+/* .fuzhi,.heitoushuliang,.maokongzhaungkuang,doudoushuliang,.naishouxing{
+  width: 100%;
+  min-height: 300rpx;
+  padding: 80rpx 0;
+  border-bottom: 1rpx solid #cccccc;
+} */
+.fuzhiimg{
+  width: 290rpx;
+  height: 446rpx;
+  margin-left: 30%;
+}
+.heitouimg{
+  width: 134rpx;
+  height: 134rpx;
+  margin-left: 38%;
+  margin-bottom: 20rpx;
+}

@@ -1,0 +1,14 @@
+<view class="noimgview" wx:if="{{ noimg }}">
+  <image  class="noimg" src="../../images/NoPhotos.png"></image>
+  <text class="noimgtext">没有照片</text>
+  <!-- <image src="../../images/Camera.png" class="Cameraimg" bindtap='openCamera'></image> -->
+</view>
+<view class="haveimgview" wx:else="{{haveimg}}">
+    <block wx:for="{{ datalist }}" wx:key="item">
+    <view class="photolist" bindtap="previewImage" bindlongpress="deleteImage"  id="{{item.url}}" data-index="{{item.id}}">
+        <image class="photoimg" src="{{ item.url }}" mode="widthFix"></image>
+        <text class="phototext">{{ item.createTime }}</text>
+      </view>
+    </block>
+  <!-- <image src="../../images/Camera.png" class="Cameraimg" bindtap='openCamera'></image> -->
+</view>

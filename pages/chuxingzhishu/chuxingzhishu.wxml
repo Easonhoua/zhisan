@@ -1,0 +1,10 @@
+<scroll-view class="container" scroll-y="{{ true }}">
+  <block wx:for="{{chuxingList}}" wx:key="item">
+      <view class='chuxingList'>
+       <navigator url="../chuxingDetail/chuxingDetail?id={{item.id }}&name={{item.name}}">
+        <image class='chuxingImg' src="{{item.url}}"></image>
+        <text class="chuxingtxt">{{item.name}}</text>
+        </navigator>
+      </view>
+  </block>
+</scroll-view>

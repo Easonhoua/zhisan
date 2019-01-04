@@ -1,0 +1,60 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/my/my",
+    "pages/meibaizhishu/meibaizhishu",
+    "pages/chuxingzhishu/chuxingzhishu",
+    "pages/shenghuozhishu/shenghuozhishu",
+    "pages/chuxingDetail/chuxingDetail",
+    "pages/shenghuoDetail/shenghuoDetail",
+    "pages/feedback/feedback",
+    "pages/mynews/mynews",
+    "pages/weathers/weathers",
+    "pages/more/more",
+    "pages/fuzhijiance/fuzhijiance"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#acce22",
+    "navigationBarTitleText": "智伞",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#9a9a9a",
+    "selectedColor": "#acce22",
+    "backgroundColor": "#ffffff",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/chuxingzhishu/chuxingzhishu",
+        "text": "出行指数",
+        "iconPath": "images/chuxing1.png",
+        "selectedIconPath": "images/chuxing2.png"
+      },
+      {
+        "pagePath": "pages/shenghuozhishu/shenghuozhishu",
+        "text": "生活指数",
+        "iconPath": "images/shenghuo1.png",
+        "selectedIconPath": "images/shenghuo2.png"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "text": "智慧伞",
+        "iconPath": "images/homesan1.png",
+        "selectedIconPath": "images/homesan2.png"
+      },
+      {
+        "pagePath": "pages/fuzhijiance/fuzhijiance",
+        "text": "肤质检测",
+        "iconPath": "images/fuzhijiance4.png",
+        "selectedIconPath": "images/fuzhijiance3.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "设置",
+        "iconPath": "images/shezhi3.png",
+        "selectedIconPath": "images/shezhi4.png"
+      }
+    ]
+  }
+}

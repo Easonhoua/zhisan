@@ -1,0 +1,44 @@
+.noimgview{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction:column;
+}
+.noimg{
+  width: 118rpx;
+  height: 126rpx;
+  margin-bottom: 20rpx;
+}
+.noimgtext{
+  font-size: 30rpx;
+  color: #cbcbcb;
+}
+.Cameraimg{
+  position: fixed;
+  bottom: 46rpx;
+  right: 66rpx;
+  width:130rpx;
+  height: 96rpx;
+}
+.haveimgview{
+  width: 100%;
+  height: 100%;
+}
+.photolist{
+  float: left;
+  display: flex;
+  flex-direction:column;
+  margin: 80rpx 100rpx 80rpx 100rpx;
+}
+.photoimg{
+  width: 154rpx;
+  height: 176rpx;
+  margin-bottom: 10rpx;
+}
+.phototext{
+  text-align: center;
+  font-size: 32rpx;
+  color: #c7c7c7;
+}

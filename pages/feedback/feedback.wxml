@@ -1,0 +1,6 @@
+<view class="feedbackview">
+  <form bindsubmit="bindFormSubmit">
+    <textarea class="feedbacktxt" placeholder="您的反馈，是对我们莫大的支持。" name="textarea"/>
+    <button form-type="submit"> 提交 </button>
+  </form>
+</view>

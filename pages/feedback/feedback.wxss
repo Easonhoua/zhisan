@@ -1,0 +1,15 @@
+/* pages/feedback/feedback.wxss */
+.feedbackview{
+  width: 750rpx;
+  height: 100%;
+  padding: 30rpx;
+  box-sizing: border-box;
+}
+.feedbacktxt{
+  width: 100%;
+  border: 1px solid #cccccc;
+  border-radius: 20rpx;
+  padding: 10rpx;
+  margin-bottom: 30rpx;
+  box-sizing: border-box;
+}

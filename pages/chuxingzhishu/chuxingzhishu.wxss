@@ -1,0 +1,33 @@
+/* pages/chuxingzhishu/chuxingzhishu.wxss */
+
+.container{
+  width: 100%;
+  height: 100%;
+}
+
+.chuxingList{
+  width: 100%;
+  height: 32.8%;
+}
+navigator{
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.chuxingImg{
+  width: 680rpx;
+  height: 88%;
+  border-radius: 20rpx; 
+  margin-top: 20rpx;
+}
+.chuxingtxt{
+  font-size: 30rpx;
+  color: #ffffff;
+  position: absolute;
+  left: 60rpx;
+  bottom: 6%;
+  font-weight: 900;
+}

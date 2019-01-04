@@ -1,0 +1,15 @@
+<view class="chuxingDetail">
+  <view class="page_bd">
+        <view class="body_head" bindtap="showitem">
+          <text>{{zhishuname}}</text> 
+          <image src='../../images/xiajiantou.png' class="xiajiantou"></image>
+        </view>
+        <view class="zhishuList" bindtap='hideview' hidden='{{ hideview }}'>
+          <block wx:for="{{ chuxingList }}" wx:key='item'>
+            <navigator url="../chuxingDetail/chuxingDetail?id={{item.id }}&name={{item.name}}"><view class="{{open?'display_show':'display_none'}} ">{{item.name}}</view></navigator>
+          </block>
+        </view>
+        <view class="zhishudengji">· {{ zhishudengji }}</view>
+    </view>
+  <rich-text nodes="{{pageData}}"></rich-text>
+</view>

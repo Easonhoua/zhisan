@@ -1,0 +1,52 @@
+/* pages/shenghuoDetail/shenghuoDetail.wxss */
+.shenghuoDetail{
+  width: 750rpx;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.page_bd{
+    padding: 10px;
+    background-color: #ffffff;
+    position: relative;
+    text-align: center;
+}
+.zhishuList{
+  position: absolute;
+  background: #ffffff;
+  right: 14%;
+}
+.body_head{
+    border: 1px solid;
+    border-color: #ffffff;
+    padding: 10px;
+    width: 660rpx;
+}
+.display_show{
+    display: block;
+    border: 1px solid;    
+    border-color: #ffffff;
+    padding: 10px;
+    width: 500rpx;
+}
+.display_none{
+    display: none;
+}
+.xiajiantou{
+  width: 40rpx;
+  height: 40rpx;
+  position: absolute;
+  right: 260rpx;
+  top: 45rpx;
+}
+.zhishudengji{
+  width: 660rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  color: #acce22;
+  font-weight: 900;
+  border-bottom: 1px solid #eee;
+  text-align: left;
+}

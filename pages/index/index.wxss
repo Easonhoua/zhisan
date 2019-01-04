@@ -1,0 +1,262 @@
+.rotateCtn{width: 100%;height:100%;transform-style:preserve-3d;position:relative;}
+.frame{width: 100%;height: 100%;position: absolute;}
+.front{animation:front 1s linear 1;backface-visibility: hidden;}
+.back{animation:back 1s linear 1;}
+@keyframes front{from{transform: rotateY(0deg);}  to{transform: rotateY(180deg);}}
+@keyframes back{from{transform: rotateY(-180deg);}  to{transform: rotateY(0deg);}}
+.z1{z-index:6}
+.z2{z-index:5}
+
+
+.homePageview{
+  width: 100%;
+  height: 100%;
+  background: #ffffff;
+}
+.viewTop{
+  width: 750rpx;
+  height: 75%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.goziwaixianview{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.bigwendu{
+  position: relative;
+}
+
+.wendu{
+  font-size: 120rpx;
+  color: #beda42;
+  /* margin-top:60rpx; */
+}
+.danwei{
+  position: absolute;
+  top: 0rpx;
+  right: -25rpx;
+  font-size: 40rpx;
+  color: #beda42;
+  font-weight: 900;
+}
+.innerdanwei{
+  position: absolute;
+  top: 60rpx;
+  right: 155rpx;
+  font-size: 40rpx;
+  color: #ffffff;
+  font-weight: 900;
+}
+.sanmianwendu{
+  font-size: 32rpx;
+  color: #848484
+}
+.uvcanshu{
+  position: relative;
+}
+.uvimg{
+  width: 30rpx;
+  height: 32rpx;
+  position: absolute;
+  left:-10rpx;
+  top: 7rpx;
+}
+.ziwaixiantxt{
+  font-size: 30rpx;
+  color: #848484;
+  margin-left: 26rpx;
+}
+.dengji{
+  margin-left: 30rpx;
+  font-size: 30rpx;
+  color: #beda42;
+}
+.howdengji{
+  margin-left: 30rpx;
+  font-size: 30rpx;
+  color: #beda42;
+}
+
+.sanimg{
+  width: 464rpx;
+  height: 367rpx;
+  margin-top: 100rpx;
+}
+.viewBottom{
+  width: 750rpx;
+  height: 25%; 
+  background: #beda42;
+  position: relative;
+}
+.bodywendu{
+  font-size: 34rpx;
+  color: #ffffff;
+  position: absolute;
+  left: 163rpx;
+  top:120rpx;
+}
+.innerdu{
+  font-size: 120rpx;
+  color: #ffffff;
+  position: absolute;
+  right: 180rpx;
+  top:60rpx;
+}
+.innerrouji{
+  font-size: 34rpx;
+  color: #ffffff;
+  position: absolute;
+  right: 178rpx;
+  top:180rpx;
+}
+.innerhwo{
+  font-size: 34rpx;
+  color: #ffffff;
+  position: absolute;
+  right: 260rpx;
+  top: 180rpx;
+}
+
+.innerimg{
+  position: absolute;
+  font-size: 34rpx;
+  color: #ffffff;
+  top:180rpx;
+  left: 163rpx;
+  padding-left:24rpx; 
+}
+.innerziwaixian{
+  text-indent: 20rpx;
+}
+
+
+.homePageview1{
+  width: 100%;
+  height: 100%;
+  background: #ffffff;
+}
+.viewTop1{
+  width: 750rpx;
+  height: 75%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.goweatherviewbtn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.bigwendu1{
+  position: relative;
+}
+
+.wendu1{
+  font-size: 120rpx;
+  color: #beda42;
+  /* margin-top:60rpx; */
+}
+.danwei1{
+  position: absolute;
+  top: 68rpx;
+  right: -38rpx;
+  font-size: 36rpx;
+  color: #beda42;
+  font-weight: 400;
+}
+.innerdanwei1{
+  position: absolute;
+  top: 110rpx;
+  right: 138rpx;
+  font-size: 40rpx;
+  color: #ffffff;
+  font-weight: 400;
+}
+.sanmianwendu1{
+  font-size: 30rpx;
+  color: #848484
+}
+.uvcanshu1{
+  position: relative;
+}
+.uvimg1{
+  width: 30rpx;
+  height: 32rpx;
+  position: absolute;
+  left:-10rpx;
+  top: 7rpx;
+}
+.ziwaixiantxt1{
+  font-size: 30rpx;
+  color: #848484;
+  margin-left: 26rpx;
+}
+.dengji1{
+  margin-left: 30rpx;
+  font-size: 30rpx;
+  color: #848484;
+}
+.howdengji1{
+  margin-left: 30rpx;
+  font-size: 30rpx;
+  color: #beda42;
+}
+
+.sanimg1{
+  width: 464rpx;
+  height: 367rpx;
+  margin-top: 100rpx;
+}
+.viewBottom1{
+  width: 750rpx;
+  height: 25%; 
+  background: #beda42;
+  position: relative;
+}
+.bodywendu1{
+  font-size: 34rpx;
+  color: #ffffff;
+  position: absolute;
+  top:180rpx;
+  left: 163rpx;
+}
+.innerdu1{
+  font-size: 34rpx;
+  color: #ffffff;
+  position: absolute;
+  right: 260rpx;
+  top: 180rpx;
+}
+.innerrouji1{
+  font-size: 34rpx;
+  color: #ffffff;
+  position: absolute;
+  right:290rpx;
+  top:115rpx;
+}
+.innerhwo1{
+  font-size: 120rpx;
+  color: #ffffff;
+  position: absolute;
+  right:180rpx;
+  top:45rpx;
+}
+
+.innerimg1{
+  font-size: 34rpx;
+  color: #ffffff;
+  padding-left:24rpx; 
+  position: absolute;
+  left: 163rpx;
+  top:120rpx;
+}
+.innerziwaixian1{
+  text-indent: 20rpx;
+}

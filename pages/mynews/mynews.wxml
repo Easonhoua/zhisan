@@ -1,0 +1,7 @@
+<view class="mynewsview">
+  <view class="mynewslist" wx:for="{{ mynewslist }}" wx:key="item">
+    <view class="mynewsitem">
+      {{ item.message }}
+    </view>
+  </view>
+</view>

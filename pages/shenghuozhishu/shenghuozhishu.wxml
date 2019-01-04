@@ -1,0 +1,12 @@
+<scroll-view class="container" scroll-y="{{ true }}">
+  <block wx:for="{{shenghuoList}}" wx:key="item">
+    
+      <view class='shenghuoList'>
+      <navigator url='../shenghuoDetail/shenghuoDetail?id={{ item.id }}&name={{item.name}}'>
+        <image class='shenghuoImg' src="{{item.url}}"></image>
+        <text class="shenghuotxt">{{item.name}}</text>
+        </navigator>
+      </view>
+    
+  </block>
+</scroll-view>

@@ -1,0 +1,29 @@
+<view class="weatherVIew">
+  <view class="weatherTop">
+    <view class="wenduview">
+      <text class="wendunum">{{dagwendu}}</text>
+      <text class="wenduddanwei">℃</text>
+    </view>
+    <view class="wendufanwei">
+      <text class="zuigaowendu">{{highwen}} /</text>
+      <text class="zuidiwendu"> {{lowwen}}</text>
+    </view>
+    <view class="locationview">
+      <text class="diqu">{{ cityname }}</text>
+      <image src="../../images/location.png" class="locationimg"></image>
+    </view>
+    <view class="updatatime">上次更新时间：{{updatetime}}</view>
+  </view>
+  <view class="weatherbottom">
+      <view class="weatherlist" >
+      <block wx:for="{{weatherlist}}" wx:key="item">
+        <view class="weatheritem">
+         <text class="howddate">{{ item.date }} </text>    
+         <text class="lowwendu"> {{ item.low }}</text>    
+         <rich-text  class="highwendu">{{ item.high }} / </rich-text>
+        </view>
+        </block>
+      </view>
+      <view class='weatheritem more' bindtap='gomore'>查看更多</view>
+  </view>
+</view>

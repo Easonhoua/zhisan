@@ -1,0 +1,87 @@
+<view class="moreView">
+  <view class="kongqizhilian">
+    <view class="kongqizhiliangtite">空气质量</view>
+    <view class="xiangxicanshu">
+      <view class="wrap">
+        <text class="wuranzhishu">污染指数</text>
+        <text class="youliang">{{ environment.quality }}</text>
+        <text class="fenshu">{{ environment.aqi }}</text>
+        <view class="circle-box">
+          <canvas class="circle" style="width:248rpx; height:240rpx;" canvas-id="canvasArcCir1">
+          </canvas>
+          <canvas class="circle" style="z-index: -5; width:248rpx; height:240rpx;" canvas-id="canvasCircle1">
+          </canvas>
+        </view>
+        <text class="duixiaowuran">0</text>
+        <text class="duidawuran">500</text>
+      </view>
+      <view class="canshulist">
+        <view class="pm25">
+          <text class="xi">pm2.5</text>
+          <text class="cu">{{environment.pm25 }}</text>
+        </view>
+        <view class="pm10">
+          <text class="xi">pm10</text>
+          <text class="cu">{{environment.pm10 }}</text>
+        </view>
+        <view class="no2">
+          <text class="xi">NO₂</text>
+          <text class="cu suojin">{{environment.no2 }}</text>
+        </view>
+        <view class="so2">
+          <text class="xi">SO₂</text>
+          <text class="cu suojin">{{environment.so2  }}</text>
+        </view>
+        <view class="co">
+          <text class="xi">CO</text>
+          <text class="cu suojinmore">{{ environment.co }}</text>
+        </view>
+      </view>
+    </view>
+  </view>
+ <view class="shushidu">
+    <view class="kongqizhiliangtite">舒适度</view>
+    <view class="xiangxicanshu">
+      <view class="wrap">
+        <text class="kongqishidu">空气湿度</text>
+        <text class="shidubaifen">{{ shidu }}</text>
+        <view class="circle-box">
+          <canvas class="circle" style="width:248rpx; height:240rpx;" canvas-id="canvasArcCir2">
+          </canvas>
+          <canvas class="circle" style="z-index: -5; width:248rpx; height:240px;" canvas-id="canvasCircle2">
+          </canvas>
+        </view>
+       <text class="zuixiaoshidu">0</text>
+        <text class="zuidashidu">100</text>
+      </view>
+      <view class="shidulist">
+        <view class="pm25">
+          <text class="xi">体感温度</text>
+          <text class="cu suojino">{{ wendu }}℃</text>
+        </view>
+        <view class="pm10">
+          <text class="xi">紫外线强度</text>
+          <text class="cu"> {{ howziwaixian}} {{ ziwaixian}}</text>
+        </view>
+      </view>
+    </view>
+  </view>
+ <view class="fengliffengxiang">
+    <view class="kongqizhiliangtite">风力风向</view>
+    <view class="xiangxicanshu">
+      <view class="wrap">
+        <image class="fengliimg" src="../../images/fenglifengxiang.png"></image>
+      </view>
+      <view class="fengxianglist">
+        <view class="pm25">
+          <text class="xi">风向</text>
+          <text class="cu">{{windDirection}}</text>
+        </view>
+        <view class="pm10">
+          <text class="xi">风力</text>
+          <text class="cu">{{windPower}}</text>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,54 @@
+<view class="noimgview" wx:if="{{ noimg }}">
+  <text class="qingdianji">请点击</text>
+  <image src="../../images/xiajiantouxi.png" class="xixiajiantou"></image>
+  <image  class="noimg" src="../../images/photoceyice2.png" bindtap='openCamera'></image>
+  <text class="ceyice">测一测</text>
+  <text class="ceyice">生成你的肤质报告</text>
+</view>
+
+<view class="haveimgview" wx:else="{{haveimg}}">
+    <view class="viewTop">
+      <image src="{{tempFilePaths}}" class="renwutouxiang" mode="widthFix"></image>
+      <text class="imgtime">{{curTime}}</text>
+    </view>
+    <view class="viewBottom">
+      <view class="bottomTitle">
+        <image src="../../images/baogaotubiao.png" class="baogaoicon"></image>
+        <text class="baogaotxt">肤质报告</text>
+      </view>
+      <view class="fuzhicontentview">
+        <view class="fuse">
+          <view class="fusebigtitle">· 肤色</view>
+          <view class="fusedengji">{{fuse.val}}</view>
+          <view class="fusecontent">{{fuse.detail}}</view>
+        </view>
+        <view class="fuzhi">
+          <view class="fuzhibigtitle">· 肤质</view>
+          <image src="../../images/chuyouqingkuang.png" class="fuzhiimg"></image>
+          <view class="fuzhidengji">{{fuzhi.val}}</view>
+          <view class="fuzhicontent">{{fuzhi.detail}}</view>
+        </view>
+        <view class="heitoushuliang">
+          <view class="heitoubigtitle">· 黑头数量</view>
+          <image src="../../images/bizi.png" class="heitouimg"></image>
+          <view class="heitoudengji">{{ heitoushuliang.val }}</view>
+          <view class="heitoucontent">{{heitoushuliang.detail}}</view>
+        </view>
+        <view class="maokongzhaungkuang">
+          <view class="maokongbigtitle">· 毛孔状况</view>
+          <view class="maokongdengji">{{ maokong.val }}</view>
+          <view class="maokongconthent">{{ maokong.detail }}</view>
+        </view>
+        <view class="doudoushuliang">
+          <view class="doudoubigtitle">· 痘痘数量</view>
+          <view class="doudoudengji">{{ doudoushuliang.val }}</view>
+          <view class="doudoucontent">{{ doudoushuliang.detail }}</view>
+        </view>
+        <view class="naishouxing">
+          <view class="naishoubigtitle">· 耐受性</view>
+          <view class="naishoudengji">{{ naishouxing.val }}</view>
+          <view class="naishoucontent">{{ naishouxing.detail }}</view>
+        </view>
+      </view>
+    </view>
+</view>
